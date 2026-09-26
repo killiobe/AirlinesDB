@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BU6143 Airline Project — Datasette Lite</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; }
+    body { max-width: 900px; margin: 3rem auto; padding: 0 1.25rem; color: #17202a; }
+    h1 { color: #17365d; }
+    .note { background: #eef4fb; border-left: 5px solid #4472c4; padding: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 0.9rem; margin-top: 1.5rem; }
+    a.group { display: block; padding: 1rem; border: 1px solid #b8c5d6; border-radius: 8px; color: #17365d; text-decoration: none; background: white; }
+    a.group:hover { background: #f5f8fc; border-color: #4472c4; }
+    .code { font-weight: 700; }
+    small { color: #5d6d7e; }
+  </style>
+</head>
+<body>
+  <h1>Week 8 Airline Project</h1>
+  <p>Select your assigned group. The database will download into your browser and Datasette Lite will start automatically.</p>
+  <div class="note"><strong>Allow time for the first load.</strong> Keep this tab open while working, and save your final SQL in your submitted supporting-calculations file.</div>
+  <div class="grid" id="groups"></div>
+  <script>
+    const groups = [
+      [1, "WN", "Southwest Airlines"],
+      [2, "OO", "SkyWest Airlines"],
+      [3, "EV", "Atlantic Southeast Airlines"],
+      [4, "DL", "Delta Air Lines"],
+      [5, "AA", "American Airlines"],
+      [6, "UA", "United Airlines"],
+      [7, "B6", "JetBlue Airways"],
+      [8, "AS", "Alaska Airlines"]
+    ];
+    const container = document.getElementById("groups");
+    for (const [group, code, airline] of groups) {
+      const file = `group_${group}_${code}_airlines.db`;
+      const databaseUrl = new URL(file, window.location.href).href;
+      const link = document.createElement("a");
+      link.className = "group";
+      link.href = `https://lite.datasette.io/?url=${encodeURIComponent(databaseUrl)}&analytics=off`;
+      link.innerHTML = `<span class="code">Group ${group} — ${code}</span><br>${airline}<br><small>Open in Datasette Lite</small>`;
+      container.appendChild(link);
+    }
+  </script>
+</body>
+</html>

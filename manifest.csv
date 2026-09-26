@@ -1,0 +1,9 @@
+group,airline_code,airline,flight_rows,benchmark_airlines,benchmark_routes,size_bytes,size_mib,integrity_check,wrong_airline_rows,sha256,filename
+1,WN,Southwest Airlines,1261855,14,8613,79941632,76.2,ok,0,c1e97fd66fb65d8ca7942e4f78cceb1ba34cd52b2b00a658fe73d6b9a659a21f,group_1_WN_airlines.db
+2,OO,SkyWest Airlines,588353,14,8613,37371904,35.6,ok,0,1106458fab4ecc54ea1f63222f38c30671b4803fa9c1653c1ea898c07eeaca54,group_2_OO_airlines.db
+3,EV,Atlantic Southeast Airlines,571977,14,8613,36339712,34.7,ok,0,5bc8e38cadae94918cf73a886d14f104d02cdd9ac54a04abd5cc3b26b0b74af1,group_3_EV_airlines.db
+4,DL,Delta Air Lines,875881,14,8613,55894016,53.3,ok,0,4d112940a49079a479eb5c1879ea7af14f798ddac9ce41d413a33cf3b54ea669,group_4_DL_airlines.db
+5,AA,American Airlines,725984,14,8613,46919680,44.7,ok,0,60c25e8448c25d20a9223cfab65299df239a7884aac570f2782d2c74f44477f1,group_5_AA_airlines.db
+6,UA,United Airlines,515723,14,8613,33800192,32.2,ok,0,aea2daab8e8be030c27034ff9b55e7ce5d24507e8bcfdbf4ee1efb0bb0c13d34,group_6_UA_airlines.db
+7,B6,JetBlue Airways,267048,14,8613,17858560,17.0,ok,0,76c58aa559774da8ce6024fd5fec3be74ad7b35bd2d75b3aed3824b912750b5e,group_7_B6_airlines.db
+8,AS,Alaska Airlines,172521,14,8613,11776000,11.2,ok,0,6fef1372f6a24162714d390517ebb7ab9d0b6612e2f2d55ccba64dea1d07a5d9,group_8_AS_airlines.db
