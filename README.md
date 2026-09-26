@@ -2,6 +2,9 @@
 
 These databases are a browser-friendly alternative to loading the complete 848 MB `airline.db` into Datasette Lite.
 
+- **Student launch page:** https://killiobe.github.io/AirlinesDB/
+- **GitHub repository:** https://github.com/killiobe/AirlinesDB
+
 Each group database contains:
 
 - Detailed 2015 flight rows for the group's assigned airline.
@@ -39,6 +42,6 @@ The benchmark tables are evidence sources, not required analysis checklists. Stu
 
 Datasette Lite loads SQLite files by URL. The host must return `Access-Control-Allow-Origin: *`. GitHub Pages does this automatically.
 
-Open `index.html` after this entire folder has been published on a CORS-enabled static website. Its buttons construct the appropriate Datasette Lite URL automatically.
+The published `index.html` is available at https://killiobe.github.io/AirlinesDB/. Its buttons construct the appropriate Datasette Lite URL automatically.
 
 See `manifest.csv` for file sizes, row counts, integrity checks, and SHA-256 hashes. The instructor's course-material workspace retains the reproducible database build script and complete source database.

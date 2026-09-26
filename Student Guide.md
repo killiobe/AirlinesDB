@@ -1,6 +1,6 @@
 # Week 8 Datasette Lite student guide
 
-1. Open the course Datasette Lite launch page.
+1. Open the [course Datasette Lite launch page](https://killiobe.github.io/AirlinesDB/).
 2. Select your group and wait while the database downloads and Datasette starts.
 3. Open the group database, then use **SQL** to enter a read-only query.
 4. Save every final query in your supporting-calculations submission. A browser URL is convenient but is not a substitute for submitting the SQL text.

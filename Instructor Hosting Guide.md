@@ -1,17 +1,24 @@
 # Instructor hosting guide
 
-## Recommended static-host workflow
+## Current deployment
 
-1. Create a GitHub repository for the Week 8 database launcher.
-2. Add the contents of this folder using Git on the command line. GitHub's browser uploader is not suitable for these database sizes.
-3. Keep every database file below GitHub's enforced 100 MiB per-file limit.
-4. Enable GitHub Pages for the repository and publish from the repository root.
-5. Open the published `index.html` page and test all eight buttons in a private browser window.
-6. Post only the launch-page URL in the LMS.
+- Student launch page: https://killiobe.github.io/AirlinesDB/
+- Repository: https://github.com/killiobe/AirlinesDB
+- GitHub Pages source: `main`, repository root
+- Eighth airline: Alaska Airlines (`AS`)
+
+The site and all eight databases were published September 25, 2026. The live database response was checked for a successful HTTP response, the required cross-origin header, the expected file size, and the SQLite file signature.
+
+## Static-host workflow used
+
+1. The folder contents were committed to the `AirlinesDB` repository using Git on the command line. GitHub's browser uploader is not suitable for these database sizes.
+2. Every database file was kept below GitHub's enforced 100 MiB per-file limit.
+3. GitHub Pages was enabled from the repository root on the `main` branch.
+4. Post only the student launch-page URL in the LMS.
 
 The generated `manifest.csv` records size, expected row count, integrity status, and SHA-256 for each database. Re-run `../build_group_lite_databases.py` whenever the full source database changes.
 
-## Suggested verification before release
+## Suggested spot checks before release
 
 - Confirm that each database opens from the published site.
 - Confirm that `package_info` shows the correct group and airline.
